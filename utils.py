@@ -17,3 +17,23 @@ def is_prime(n):
 			else:
 				i += 1
 		return prime
+
+def degree_of_five(n):
+	res = True
+	while n > 1:
+		if n % 5 != 0:
+			res = False
+			break
+		else:
+			n //= 5
+	return res
+
+def degree_of_two(n):
+	res = True
+	while n > 1:
+		if n % 2 != 0:
+			res = False
+			break
+		else:
+			n //= 2
+	return res
